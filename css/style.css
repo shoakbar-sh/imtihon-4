@@ -162,5 +162,15 @@ header {
 }
 
 .sayt {
-  background-color: rgba(255, 255, 255, 0.904);
+  background-color: rgba(255, 255, 255, 0.947);
+}
+
+.blog {
+  background-image: url(../src/images/Ellipse1949.svg);
+  width: 1090px;
+  height: 700px;
+  transform: rotate(180deg);
+  filter: blur(10px);
+  margin-top: 10px;
+  margin-left: -30px;
 }/*# sourceMappingURL=style.css.map */
