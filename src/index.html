@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../css/style.min.css">
+   <title>Imtixon-4</title>
+</head>
+
+<body class="bg-slate-50">
+
+   <div class="container">
+      <header>
+         <nav class="flex">
+            <div class="mt-[15px] font-medium text-3xl">
+               <a href="./index.html" class="ml-[120px]">Logo</a>
+            </div>
+
+            <div class="flex">
+               <ul class="flex justify-between ml-[132px] w-[427px] mt-[27px] font-bold">
+                  <li>О компании</li>
+                  <li>Портфолио</li>
+                  <li>Услуги</li>
+                  <li>Контакты</li>
+               </ul>
+            </div>
+
+            <div class="items-center flex">
+               <input type="checkbox" class="input ml-[167px] mt-[20px]">
+               <div class="flex-row ml-10">
+                  <a href="tel:+998 90 777-77-77" class="text-xl font-bold">+998 90 777-77-77</a>
+                  <a href="mailto:chotatam@gmail.com"
+                     class="text-[14px] absolute mt-[30px] ml-[-198px]">chotatam@gmail.com</a>
+               </div>
+               <button class="bg-[#6911ad] text-white px-[13px] py-[11px] rounded-lg mt-[17px] ml-[38px]">Заказать
+                  звонок</button>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <div class="back absolute w-[514px] h-[557px] ml-[1005px]">
+            <img src="./images/Ellipse4.svg" alt="">
+         </div>
+         <section>
+
+            <div class="flex">
+               <img src="./images/Ellipse3.svg" alt="" class="absolute mt-3 ">
+               <div class="mt-[228px] ml-[120px]">
+                  <h1 class="w-[675px] text-[48px] font-semibold">Biz veb-saytlar, ilovalarni
+                     ishlab chiqamiz</h1>
+                  <p class="sit w-[557px] mb-[212px] mt-10 text-[18px] ">Lorem ipsum dolor sit amet, consectetur
+                     adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <a href="#" class="fil absolute">Портфолио</a>
+               </div>
+
+
+               <div class="globus">
+                  <canvas id="cobe" style="width: 500px; height: 500px" width="1000" height="1000"></canvas>
+
+                  <script type="module">
+                     import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+                     let phi = 0
+                     let canvas = document.getElementById("cobe")
+
+                     const globe = createGlobe(canvas, {
+                        devicePixelRatio: 2,
+                        width: 1000,
+                        height: 1000,
+                        phi: 0,
+                        theta: 0,
+                        dark: 0,
+                        diffuse: 1.2,
+                        scale: 1,
+                        mapSamples: 16000,
+                        mapBrightness: 6,
+                        baseColor: [1, 1, 1],
+                        markerColor: [1, 0.5, 1],
+                        glowColor: [1, 1, 1],
+                        offset: [0, 0],
+                        markers: [
+                           { location: [37.7595, -122.4367], size: 0.03 },
+                           { location: [40.7128, -74.006], size: 0.1 },
+                        ],
+                        onRender: (state) => {
+                           // Called on every animation frame.
+                           // `state` will be an empty object, return updated params.
+                           state.phi = phi
+                           phi += 0.01
+                        },
+                     })
+                  </script>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <section>
+         <div class="flex mt-[247px]">
+            <div class="w-[609px] ml-[165px]">
+               <h1 class="text-[50px] font-bold">Kompaniya haqida</h1>
+
+
+               <p class="text-[18px] mt-5 ">
+                  <span>
+                     Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion echimlarni taqdim etish
+                     maqsadida tashkil etilgan veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va sifatli
+                     mahsulotni taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali veb-dizayn, ishlab chiqish
+                     va marketing mutaxassislaridan iborat.</span>
+                  <br>
+                  <br>
+                  <span class="fon">
+
+
+                     Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO optimallashtirish, kontent
+                     yaratish va reklama kampaniyalarini o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz.
+                     Biz eng yangi texnologiyalar va innovatsion usullardan foydalangan holda brendni rivojlantirish
+                     va sotishni ko'paytirish bilan shug'ullanamiz.
+                  </span>
+               </p>
+
+            </div>
+            <div class="flex-wrap flex w-[600px] ml-[203px] mt-[70px]">
+               <div class="w-[270px] h-[88px]">
+                  <h1 class="text-blue-800 ml-[50px] text-[50px] font-semibold">20+</h1>
+                  <span class="text-[20px]">Проектов запустил</span>
+               </div>
+
+               <div class="w-[270px] h-[88px]">
+                  <h1 class="text-blue-800 ml-[10px] text-[50px] font-semibold">4 года</h1>
+                  <span class="text-[20px]">Опыта разработки</span>
+               </div>
+
+               <div class="w-[270px] h-[88px] mt-5">
+                  <h1 class="text-blue-800 ml-[50px] text-[50px] font-semibold">12+</h1>
+                  <span class="text-[20px]">Профессионалов</span>
+               </div>
+
+               <div class="w-[270px] h-[88px] mt-5">
+                  <h1 class="text-blue-800 ml-[10px] text-[50px] font-semibold">4 года</h1>
+                  <span class="text-[20px]">Опыта разработки </span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="mt-[95px]">
+            <h1 class="text-[36px] font-bold ml-[585px]">Bizning afzalliklarimiz</h1>
+
+            <div class="flex flex-wrap pl-[50px]">
+               <div class="pila">
+                  <img src="./images/Ellipse1947.svg" alt="" class="absolute mt-[-800px] ml-[-50px]">
+               </div>
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/spiral.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Individual yondashuv</h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/lupa.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Ekspertiza</h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/roket.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Professional xizmat </h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+               <div class="pila">
+                  <img src="./images/Ellipse1948.svg" alt="" class="absolute ml-[-860px] mt-[-400px]">
+               </div>
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/spiral.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Individual yondashuv</h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/lupa.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Ekspertiza</h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+
+               <div class="card net w-[433px] h-[250px] pl-[25px]">
+                  <img src="./images/roket.svg" alt="" class="mt-[27px] ml-[5px]">
+                  <h3 class="text-[24px] font-bold mt-[25px]">Professional xizmat </h3>
+                  <hr class="w-[50px] text-[#686464] bg-[#686464] rounded-2xl h-[2px] mt-3">
+                  <p class="mt-[15px] text-[16px] ">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga
+                     javob beradigan echimlarni
+                     yaratamiz
+                  </p>
+               </div>
+               <img src="./images/backlines.svg" alt="" class="absolute ml-[-50px] w-[1516px] mt-9">
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <h1 class="text-center text-[36px] mt-[120px] font-bold">Bajargan loyihalarimiz</h1>
+         <div class="all w-[734px] h-[55px] mt-10 ml-[398px]">
+            <ul class="inline-flex gap-[64px] items-center mt-[14px] ml-[55px] font-bold text-[16px]">
+               <li class="li">Barchasi</li>
+               <li class="li">Veb sayt</li>
+               <li class="li">Veb dizayn</li>
+               <li class="li">SMM</li>
+               <li class="li">Mobil ilova</li>
+            </ul>
+         </div>
+         <img src="./images/Rectangle9521.svg" alt="" class="absolute mt-[-200px]">
+
+         <img src="./images/Rectangle9566.svg" alt="" class="absolute mt-[-530px] ml-[410px]">
+
+         <div class="flex flex-wrap ml-[70px] mt-10 gap-[30px]">
+
+            <div class="card w-[433px] h-[362px]">
+
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]"> Mobil ilova
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON mobil ilovasi</div>
+               </div>
+
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9557@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9557.png">
+                  <img src="./images/Rectangle9557.png" alt="" class="">
+               </picture>
+            </div>
+
+            <div class="card w-[433px] h-[362px]">
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]">Veb sayt
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON Veb sayti</div>
+               </div>
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9558@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9558.png">
+                  <img src="./images/Rectangle9558.png" alt="" class="">
+               </picture>
+            </div>
+
+            <div class="card w-[433px] h-[362px]">
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]">SMM
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON smm</div>
+
+               </div>
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9559@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9559.png">
+                  <img src="./images/Rectangle9559.png" alt="" class="">
+               </picture>
+            </div>
+
+            <div class="card w-[433px] h-[362px]">
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]">Mobil ilova
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON mobil ilovasi</div>
+
+               </div>
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9560@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9560.png">
+                  <img src="./images/Rectangle9560.png" alt="" class="">
+               </picture>
+            </div>
+
+            <div class="card w-[433px] h-[362px]">
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]">Veb sayt
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON Veb sayti</div>
+
+               </div>
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9561@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9561.png">
+                  <img src="./images/Rectangle9561.png" alt="" class="">
+               </picture>
+            </div>
+
+            <div class="card w-[433px] h-[362px]">
+               <div class="veb bg-white px-[30px] py-[8px] absolute rounded-xl ml-[287px] mt-[15px]">SMM
+                  <div class="absolute mt-[250px] text-white text-[0px] uy"> UYMAKON smm</div>
+
+               </div>
+               <picture>
+                  <source media="(max-width:350px )" srcset="./images/Rectangle9562@2x.png">
+                  <source media="(max-width:768px )" srcset="./images/Rectangle9562.png">
+                  <img src="./images/Rectangle9562.png" alt="" class="">
+               </picture>
+            </div>
+
+         </div>
+
+
+         <a href="#" class="kor absolute ml-[730px] mt-10">Barchasini ko’rish</a>
+      </section>
+
+      <section class="bad">
+         <div class="sayt rounded-3xl w-[1358px] h-[788px] ml-[72px]">
+            <h1 class="text-[36px] mb-10 font-bold text-center mt-[230px] pt-[40px]">Bizning xizmatlar</h1>
+
+            <div class="flex flex-wrap ml-[79px]">
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon.svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] font-semibold">Veb saytlar</h1>
+                  <p class="w-[350px] text-[20px] mt-5 pl-[35px] text-[#272727B2]">Bizdan eng yaxshi va eng zo'r sifatga
+                     ega platforma yarating</p>
+               </div>
+
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon(1).svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] font-semibold">UI/UX Dizayn </h1>
+                  <p class="w-[320px] text-[20px]  mt-5 pl-[49px] text-[#272727B2]">Biz UI/UX dizayn xizmatlarini taqdim
+                     etamiz </p>
+               </div>
+
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon(3).svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] font-semibold">Mobil ilovalar</h1>
+                  <p class="w-[350px] text-[20px]  mt-5 pl-[20px] text-[#272727B2]">Biz eng yaxshi dizaynerlar
+                     xizmatlarini taqdim etamiz</p>
+               </div>
+
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon(7).svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] font-semibold ml-3">SMM</h1>
+                  <p class="w-[350px] text-[20px]  mt-5 pl-[35px] text-[#272727B2]">Bizdan eng yaxshi va eng zo'r
+                     sifatga ega platforma yarating</p>
+               </div>
+
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon(6).svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] ml-5 font-semibold">Grafik dizayn</h1>
+                  <p class="w-[330px] text-[20px]  mt-5 pl-[50px] text-[#272727B2]">Biz fotografiya xizmatlarini
+                     taqdim etamiz</p>
+               </div>
+
+               <div class="card w-[364px] h-[300px] text-center">
+                  <img src="./images/Icon(4).svg" alt="" class="pt-[48px] pl-[158px] pb-5">
+                  <h1 class="text-[28px] font-semibold">Motion dizayn</h1>
+                  <p class="w-[350px] text-[20px] mt-5 pl-[40px] text-[#272727B2]">Bizdan eng yaxshi va eng zo'r sifatga
+                     ega platforma yarating</p>
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+   </div>
+
+   <script src="./scripts/utilis.js"></script>
+   <script src="./scripts/index.js"></script>
+</body>
+
+</html>
