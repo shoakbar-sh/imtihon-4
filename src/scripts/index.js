@@ -16,7 +16,7 @@ function slider() {
       index = coruselitem.length - 1
    }
 
-   corusel.style.transform = `translateX(${-index * 433}px)`
+   corusel.style.transform = `translateX(${-index * 463}px)`
 }
 
 let play = setInterval(() => {
@@ -35,3 +35,41 @@ prev.addEventListener("click", () => {
    slider()
    clearInterval(play)
 })
+
+
+let slayd = document.querySelector(".slayd_list"),
+   slayditem = document.querySelectorAll(".slayd-item"),
+   on = document.querySelector(".on"),
+   chap = document.querySelector(".chap");
+
+let i = 0;
+
+function slide() {
+   if (i > slayditem.length - 1) {
+      i = 0
+   }
+
+   if (i < 0) {
+      i = slayditem.length - 1
+   }
+
+   slayd.style.transform = `translateX(${-i * 343}px)`
+}
+
+let go = setInterval(() => {
+   i++
+   //  slider()
+}, 4000);
+
+on.addEventListener("click", () => {
+   i++;
+   slide()
+   clearInterval(go)
+})
+
+chap.addEventListener("click", () => {
+   i--;
+   slide()
+   clearInterval(go)
+})
+

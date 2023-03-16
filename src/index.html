@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
    <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 <body class="bg-slate-50">
 
    <div class="container">
-      <header>
+      <header class="desk">
          <nav class="flex">
             <div class="mt-[15px] font-medium text-3xl">
                <a href="./index.html" class="ml-[120px]">Logo</a>
@@ -30,9 +30,9 @@
             </div>
 
             <div class="items-center flex">
-               <input type="checkbox" class="input ml-[167px] mt-[20px]">
+               <input type="checkbox" id="them" class="input ml-[167px] mt-[20px]">
                <div class="flex-row ml-10">
-                  <a href="tel:+998 90 777-77-77" class="text-xl font-bold">+998 90 777-77-77</a>
+                  <a href="tel:+998907777777" class="text-xl font-bold">+998 90 777-77-77</a>
                   <a href="mailto:chotatam@gmail.com"
                      class="text-[14px] absolute mt-[30px] ml-[-198px]">chotatam@gmail.com</a>
                </div>
@@ -42,13 +42,23 @@
          </nav>
       </header>
 
+      <header class="mobile bg-white h-[74px]">
+         <nav class="flex px-5 py-4 justify-around items-center">
+            <i class='bx bx-menu-alt-right text-black text-[25px]'></i>
+
+            <a href="#" class="ref"><img src="./images/LOGO.svg" alt="" class="w-[89px] h-[39px]"></a>
+
+            <input type="checkbox" id="boks">
+         </nav>
+      </header>
+
       <main>
          <div class="back absolute w-[514px] h-[557px] ml-[1005px]">
             <img src="./images/Ellipse4.svg" alt="">
          </div>
          <section>
 
-            <div class="flex">
+            <div class="flex yer">
                <img src="./images/Ellipse3.svg" alt="" class="absolute mt-3 ">
                <div class="mt-[228px] ml-[120px]">
                   <h1 class="w-[675px] text-[48px] font-semibold">Biz veb-saytlar, ilovalarni
@@ -72,8 +82,8 @@
 
                      const globe = createGlobe(canvas, {
                         devicePixelRatio: 2,
-                        width: 1000,
-                        height: 1000,
+                        width: 900,
+                        height: 900,
                         phi: 0,
                         theta: 0,
                         dark: 0,
@@ -90,8 +100,6 @@
                            { location: [40.7128, -74.006], size: 0.1 },
                         ],
                         onRender: (state) => {
-                           // Called on every animation frame.
-                           // `state` will be an empty object, return updated params.
                            state.phi = phi
                            phi += 0.01
                         },
@@ -374,112 +382,179 @@
          <div class="blog absolute"></div>
          <h1 class="text-[36px] font-bold pt-[120px] text-center">Blog yangiliklarimiz</h1>
 
-         <div class="flex ml-[90px] flex-wrap mt-9 ">
+         <div class="flex ml-[90px] flex-wrap mt-9">
 
-            <div class="corusel gap-[20px] flex overflow-x-hidden w-[433px]">
+            <div class="list absolute"></div>
 
-               <div class="card corusel_list w-[433px] h-[530px]">
-                  <picture>
-                     <source media="(max-width:350px )" srcset="./images/qa@2x.svg">
-                     <source media="(max-width:768px )" srcset="./images/qa.svg">
-                     <img src="./images/qa.svg" alt="" class="corusel-item item">
-                  </picture>
 
-                  <div class="card-body rounded-b-[20px] bg-white h-[213px]">
-                     <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«QA» mutaxassisi qanday bo'lishi kerak?
-                     </h2>
-                     <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[39px]">🔥 Ma'lumki, «Najot
-                        Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni testlash» kursi ham qo'shilgan.
-                     </p>
+            <div class="corusel flex overflow-hidden w-[1378px]">
 
-                     <div class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
-                        <span>#hi_tech</span>
-                        <span><i class='bx bx-calendar-event ml-[190px]'></i></span>
-                        <span>14:45 22/02/23</span>
+               <div class="corusel_list gap-[30px] flex">
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/qa@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/qa.svg">
+                           <img src="./images/qa.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«QA» mutaxassisi qanday bo'lishi
+                              kerak?
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[39px]">🔥 Ma'lumki, «Najot
+                              Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni testlash» kursi ham
+                              qo'shilgan.
+                           </p>
+
+                           <div
+                              class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
-               </div>
-               
-               <div class="card corusel_list w-[433px] h-[530px]">
-                  <picture>
-                     <source media="(max-width:350px )" srcset="./images/nt@2x.svg">
-                     <source media="(max-width:768px )" srcset="./images/nt.svg">
-                     <img src="./images/nt.svg" alt="" class="corusel-item item">
-                  </picture>
 
-                  <div class="card-body rounded-b-[20px] bg-white h-[213px]">
-                     <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«Najot Ta'lim» logosi haqida nimalarni bilasiz?        
-                     </h2>
-                     <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.
-                     </p>
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/nt@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/nt.svg">
+                           <img src="./images/nt.svg" alt="" class="item">
+                        </picture>
 
-                     <div class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
-                        <span>#hi_tech</span>
-                        <span><i class='bx bx-calendar-event ml-[190px]'></i></span>
-                        <span>14:45 22/02/23</span>
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«Najot Ta'lim» logosi haqida
+                              nimalarni
+                              bilasiz?
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">«Najot Ta'lim» logosi
+                              Abstrac
+                              t logo mark turdagi logo hisoblanadi. Bu kabi logolarning ma'nosini bir martada ilg'ash
+                              qiyin
+                              bo'lishi mumkin.
+                           </p>
+
+                           <div
+                              class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
-               </div>
-               
-               <div class="card corusel_list w-[433px] h-[530px]">
-                  <picture>
-                     <source media="(max-width:350px )" srcset="./images/maxsus@2x.svg">
-                     <source media="(max-width:768px )" srcset="./images/maxsus.svg">
-                     <img src="./images/maxsus.svg" alt="" class="corusel-item item">
-                  </picture>
 
-                  <div class="card-body rounded-b-[20px] bg-white h-[213px]">
-                     <h2 class="text-[20px] w-[373px] font-semibold pt-[13px] pl-[30px]">🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!
-                     </h2>
-                     <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...
-                     </p>
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/maxsus@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/maxsus.svg">
+                           <img src="./images/maxsus.svg" alt="" class="item">
+                        </picture>
 
-                     <div class="flex items-center justify-between mt-[18px] text-[15px] px-[30px] text-[#272727]">
-                        <span>#hi_tech</span>
-                        <span><i class='bx bx-calendar-event ml-[190px]'></i></span>
-                        <span>14:45 22/02/23</span>
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] w-[373px] font-semibold pt-[13px] pl-[30px]">🙌 «TechJobs» kompaniyasi
+                              Java
+                              dasturchilarni maxsus «Deep interview»ga taklif qiladi!
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">Intervyuda sizning oʻz
+                              sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...
+                           </p>
+
+                           <div
+                              class="flex items-center justify-between mt-[18px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
-               </div>
 
-               <div class="card corusel_list w-[433px] h-[530px]">
-                  <picture>
-                     <source media="(max-width:350px )" srcset="./images/maxsus@2x.svg">
-                     <source media="(max-width:768px )" srcset="./images/maxsus.svg">
-                     <img src="./images/maxsus.svg" alt="" class="corusel-item item">
-                  </picture>
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/qa@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/qa.svg">
+                           <img src="./images/qa.svg" alt="" class="item">
+                        </picture>
 
-                  <div class="card-body rounded-b-[20px] bg-white h-[213px]">
-                     <h2 class="text-[20px] w-[373px] font-semibold pt-[13px] pl-[30px]">🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!
-                     </h2>
-                     <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...
-                     </p>
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«QA» mutaxassisi qanday bo'lishi
+                              kerak?
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[39px]">🔥 Ma'lumki, «Najot
+                              Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni testlash» kursi ham
+                              qo'shilgan.
+                           </p>
 
-                     <div class="flex items-center justify-between mt-[18px] text-[15px] px-[30px] text-[#272727]">
-                        <span>#hi_tech</span>
-                        <span><i class='bx bx-calendar-event ml-[190px]'></i></span>
-                        <span>14:45 22/02/23</span>
+                           <div
+                              class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
-               </div>
 
-               <div class="card corusel_list w-[433px] h-[530px]">
-                  <picture>
-                     <source media="(max-width:350px )" srcset="./images/maxsus@2x.svg">
-                     <source media="(max-width:768px )" srcset="./images/maxsus.svg">
-                     <img src="./images/maxsus.svg" alt="" class="corusel-item item">
-                  </picture>
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/nt@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/nt.svg">
+                           <img src="./images/nt.svg" alt="" class="item">
+                        </picture>
 
-                  <div class="card-body rounded-b-[20px] bg-white h-[213px]">
-                     <h2 class="text-[20px] w-[373px] font-semibold pt-[13px] pl-[30px]">🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!
-                     </h2>
-                     <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...
-                     </p>
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] font-semibold pt-[13px] pl-[30px]">«Najot Ta'lim» logosi haqida
+                              nimalarni
+                              bilasiz?
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">«Najot Ta'lim» logosi
+                              Abstrac
+                              t logo mark turdagi logo hisoblanadi. Bu kabi logolarning ma'nosini bir martada ilg'ash
+                              qiyin
+                              bo'lishi mumkin.
+                           </p>
 
-                     <div class="flex items-center justify-between mt-[18px] text-[15px] px-[30px] text-[#272727]">
-                        <span>#hi_tech</span>
-                        <span><i class='bx bx-calendar-event ml-[190px]'></i></span>
-                        <span>14:45 22/02/23</span>
+                           <div
+                              class="flex items-center justify-between mt-[22px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[433px] corusel-item ">
+                     <div class="card h-[530px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/maxsus@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/maxsus.svg">
+                           <img src="./images/maxsus.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="card-body rounded-b-[20px] bg-white h-[213px]">
+                           <h2 class="text-[20px] w-[373px] font-semibold pt-[13px] pl-[30px]">🙌 «TechJobs» kompaniyasi
+                              Java
+                              dasturchilarni maxsus «Deep interview»ga taklif qiladi!
+                           </h2>
+                           <p class="text-[16px] pl-[30px] w-[400px] text-[#272727B2] pt-[9px]">Intervyuda sizning oʻz
+                              sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...
+                           </p>
+
+                           <div
+                              class="flex items-center justify-between mt-[18px] text-[15px] px-[30px] text-[#272727]">
+                              <span>#hi_tech</span>
+                              <span><i class='bx bx-calendar-event ml-[150px]'></i></span>
+                              <span>14:45 22/02/23</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -487,15 +562,364 @@
             </div>
 
             <span
-               class="prev absolute w-[70px] h-[70px] mt-[230px] ml-[-80px] bg-white rounded-[50%] py-[12px] px-[14px]">
+               class="prev absolute w-[50px] h-[50px] mt-[230px] ml-[-80px] bg-white rounded-[50%] py-[2px] px-[4px]">
                <i class='bx bx-chevron-left text-[48px]'></i>
             </span>
             <span
-               class="next absolute w-[70px] h-[70px] mt-[230px] bg-white ml-[1360px] rounded-[50%] py-[12px] px-[14px]">
+               class="next absolute w-[50px] h-[50px] mt-[230px] bg-white ml-[1370px] rounded-[50%] py-[2px] px-[4px]">
                <i class='bx bx-chevron-right text-[48px]'></i>
             </span>
          </div>
       </section>
+
+      <section>
+         <h1 class="text-[36px] font-bold mt-[120px] text-center">Bizning jamoa</h1>
+
+         <div class="flex ml-[50px] flex-wrap mt-10 ">
+            <div class="slayd flex overflow-hidden w-[1378px]">
+               <div class="slayd_list gap-[25px] flex">
+
+                  <div class="w-[317px] ml-6 slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man.svg">
+                           <img src="./images/man.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">John Doe</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">Frontend dasturchi</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man(2)@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man(2).svg">
+                           <img src="./images/man(2).svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">Tonny Cross</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">SMM designer</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man3.svg@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man3.svg">
+                           <img src="./images/man3.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">Cristiano Ronaldo</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">Project Manager</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man4.svg@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man4.svg">
+                           <img src="./images/man4.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">Tonny Cross</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">SMM designer</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man3.svg@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man3.svg">
+                           <img src="./images/man3.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">Cristiano Ronaldo</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">Project Manager</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man4.svg@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man4.svg">
+                           <img src="./images/man4.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">Tonny Cross</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">SMM designer</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w-[317px] slayd-item">
+
+                     <div class="card h-[372px]">
+                        <picture>
+                           <source media="(max-width:350px )" srcset="./images/man@2x.svg">
+                           <source media="(max-width:768px )" srcset="./images/man.svg">
+                           <img src="./images/man.svg" alt="" class="item">
+                        </picture>
+
+                        <div class="man card-body text-center ">
+                           <h3 class="text-[24px] pt-[10px] font-semibold">John Doe</h3>
+                           <hr class="w-[100px] rounded-xl h-1 m-auto bg-[#666666]">
+                           <small class="text-[#272727CC] mt-2 italic">Frontend dasturchi</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="absolute mt-[-140px] ml-[-49px]">
+               <img src="./images/Rectangle9574.svg" alt="">
+            </div>
+
+            <div class="absolute">
+               <img src="./images/Rectangle9575.svg" alt="" class="ml-[362px] mt-[-280px]">
+            </div>
+
+            <span
+               class="chap absolute w-[50px] h-[50px] mt-[130px] ml-[-40px] bg-white rounded-[50%] py-[2px] px-[4px]">
+               <i class='bx bx-chevron-left text-[48px]'></i>
+            </span>
+            <span class="on absolute w-[50px] h-[50px] mt-[130px] bg-white ml-[1390px] rounded-[50%] py-[2px] px-[4px]">
+               <i class='bx bx-chevron-right text-[48px]'></i>
+            </span>
+         </div>
+      </section>
+
+      <section>
+         <div class="flex absolute mt-[131px] ml-[80px] bg-white w-[1360px] h-[1083px] rounded-3xl pt-[60px] pl-[80px]">
+            <div class="">
+               <h1 class="text-[36px] w-[740px] italic font-semibold">Sizni bir finjon qahva ustida loyihangizni
+                  batafsil muhokama
+                  qilishga mamnuniyat ila taklif qilamiz.</h1>
+
+               <form action="#">
+                  <label for="name">
+                     <input type="text" id="name" placeholder="Ismingiz"
+                        class="w-[499px] ring-0 pb-2 placeholder:text-black h-[29px] placeholder:text-[18px] mt-10">
+                  </label>
+                  <hr class="w-[549px] bg-black h-1">
+
+                  <label for="tel">
+                     <input type="number" placeholder="Telefon raqamingiz" id="tel"
+                        class="w-[499px] ring-0 pb-2 placeholder:text-black h-[29px] placeholder:text-[18px] mt-10">
+                  </label>
+                  <hr class="w-[549px] bg-black h-1">
+
+                  <label for="text">
+                     <input type="text" placeholder="G'oyangiz xaqida qisqacha (Muhim emas)" id="text"
+                        class="w-[499px] ring-0 pb-2 placeholder:text-black h-[29px] placeholder:text-[18px] mt-10">
+                  </label>
+                  <hr class="w-[549px] bg-black h-1">
+               </form>
+
+               <h1 class="text-[24px] font-semibold mt-10">Qanday xizmatlardan foydalanishni xoxlaysiz?</h1>
+
+               <div class="flex">
+                  <div class="flex mt-[34px]">
+                     <div class="w-[258px] flex-wrap">
+
+                        <form action="#">
+                           <label for="checkbox">
+                              <input type="checkbox" id="checkbox" class="w-5 h-5">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Backend</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="check">
+                              <input type="checkbox" id="check" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">CRM ishlab chiqish</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="box">
+                              <input type="checkbox" id="box" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] w-[140px] font-semibold ml-3 ">Internet magazin
+                                 <span class="ml-9">ishlab chiqish</span></span>
+                        </form>
+
+                        <form action="#">
+                           <label for="chec">
+                              <input type="checkbox" id="chec" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Logotip va
+                                 <span class="ml-9">Brandbook</span></span>
+                        </form>
+
+                        <form action="#">
+                           <label for="checkbox1">
+                              <input type="checkbox" id="checkbox1" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Portal ishlab chiqish</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="checkbox2">
+                              <input type="checkbox" id="checkbox2" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Veb dizayn</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="checkbox3">
+                              <input type="checkbox" id="checkbox3" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Mobilograf</span>
+                        </form>
+                     </div>
+
+
+                     <div class="w-[233px] ml-[175px]">
+
+                        <form action="#">
+                           <label for="checkbox4">
+                              <input type="checkbox" id="checkbox4" class="w-5 h-5">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Frontend</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="chec2">
+                              <input type="checkbox" id="chec2" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Grafik dizayn</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="box1">
+                              <input type="checkbox" id="box1" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Motion dizayn</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="chec3">
+                              <input type="checkbox" id="chec3" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Mobil ilova
+                                 <span class="ml-[49px]">ishlab chiqish</span></span>
+                        </form>
+
+                        <form action="#">
+                           <label for="ch">
+                              <input type="checkbox" id="ch" class="w-5 h-5 mt-[58px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">Veb sayt ishlab chiqish</span>
+                        </form>
+
+                        <form action="#">
+                           <label for="box3">
+                              <input type="checkbox" id="box3" class="w-5 h-5 mt-[32px]">
+                              <span class="text-[18px] font-semibold ml-3 mt-[-10px]">SMM dizayn</span>
+                        </form>
+
+                     </div>
+
+
+                  </div>
+
+                  <div class="w-[487px] h-[602px] bg-[#5353531a] mt-[-330px] rounded-xl ml-[75px] px-[60px]">
+                     <h1 class="text-[24px] font-semibold pt-10 pl-5">NIMANI MA'QUL KO'RASIZ?</h1>
+
+                     <div class="flex flex-wrap mt-10">
+                        <div class="card">
+                           <picture>
+                              <source media="(max-width:350px )" srcset="./images/aciq@2x.svg">
+                              <source media="(max-width:768px )" srcset="./images/aciq.svg">
+                              <img src="./images/aciq.svg" alt="" class="">
+                           </picture>
+                           <h1 class="text-[24px] text-center mt-2 font-semibold">Achchiq kofe</h1>
+                        </div>
+
+                        <div class="card ml-[66px]">
+                           <picture>
+                              <source media="(max-width:350px )" srcset="./images/sut.svg@2x.svg">
+                              <source media="(max-width:768px )" srcset="./images/sut.svg">
+                              <img src="./images/sut.svg" alt="" class="">
+                           </picture>
+                           <h1 class="text-[24px] text-center mt-2 font-semibold">Sutli kofe</h1>
+                        </div>
+
+                        <div class="card mt-[56px]">
+                           <picture>
+                              <source media="(max-width:350px )" srcset="./images/suv.svg@2x.svg">
+                              <source media="(max-width:768px )" srcset="./images/suv.svg">
+                              <img src="./images/suv.svg" alt="" class="">
+                           </picture>
+                           <h1 class="text-[24px] text-center mt-2 font-semibold">Suv</h1>
+                        </div>
+
+                        <div class="card ml-[66px] mt-[56px]">
+                           <picture>
+                              <source media="(max-width:350px )" srcset="./images/coy.svg@2x.svg">
+                              <source media="(max-width:768px )" srcset="./images/coy.svg">
+                              <img src="./images/coy.svg" alt="" class="">
+                           </picture>
+                           <h1 class="text-[24px] mt-2 font-semibold text-center">Choy</h1>
+                        </div>
+                     </div>
+                     <a href="#" class="fil absolute mt-[60px] ml-[-60px]">Mijoz bo’lish</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="bg-white px-[120px] py-[80px] mt-[1400px] h-[228px]">
+         <div class="absolute mask"></div>
+         <div class="flex justify-between">
+            <div class="mt-[15px] font-medium text-3xl">
+               <a href="./index.html" class="text-[54px]">LOGO</a>
+            </div>
+
+            <div class="w-[478px] font-bold text-[16px]">
+               <h4>
+                  <span><i class='bx bx-map ml-[-39px] mt-2 text-[30px] absolute'></i></span>
+                  Manzil: Toshkent shahri, Sergeli tumani, Navro’z ko’cha 3-uy.
+                  Mo’ljal: “ASIA AUTO” avtosalon ichki qismi
+               </h4>
+            </div>
+
+            <div class="">
+               <div class="mt-[-14px]">
+                  <span><i class='bx bx-phone text-[22px]'></i></span>
+                  <a href="tel:+998999999999" class="text-[16px] font-semibold">+998 99 999 99 99</a>
+               </div>
+               <div class="mt-[25px]">
+                  <span><i class='bx bx-phone text-[22px]'></i></span>
+                  <a href="tel:+998999999999" class="text-[16px] font-semibold">+998 99 999 99 99</a>
+               </div>
+            </div>
+
+            <div class="flex gap-[32px]">
+               <span><i class='bx bxl-telegram'></i></span>
+               <span><i class='bx bxl-facebook'></i></span>
+               <span><i class='bx bxl-instagram'></i></span>
+            </div>
+         </div>
+      </footer>
    </div>
 
    <script src="./scripts/utilis.js"></script>
