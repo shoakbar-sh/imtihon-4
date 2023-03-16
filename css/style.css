@@ -87,6 +87,29 @@
   transition: all 0.5s ease;
 }
 
+.logo {
+  display: none;
+}
+
+.fill {
+  background-color: #6911AD;
+  color: #1c1b1b;
+  padding: 32px 0 16px 39px;
+  border-radius: 141px;
+  width: 70px;
+  height: 70px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+.fill:hover {
+  padding: 32px 68 16px 39px;
+  color: white;
+  border-radius: 141px;
+  width: 170px;
+  height: 70px;
+  transition: all 0.5s ease;
+}
+
 .globus {
   background-color: rgb(217, 217, 217);
   border-radius: 50%;
@@ -325,11 +348,11 @@
   .fil {
     margin-top: -70px;
   }
-  .komp {
-    font-size: 24px;
-    text-align: center;
+  .idea {
+    height: 500px;
   }
   .haq {
+    flex-wrap: wrap;
     margin-top: 94px;
   }
   .siz {
@@ -340,11 +363,182 @@
   .lion {
     margin-top: -200px;
   }
+  .wed {
+    display: none;
+  }
+  .nik {
+    margin-top: -1180px;
+  }
+  .nike {
+    margin-top: -310px;
+  }
   .net {
     width: 360px;
     height: 243px;
+    margin-left: 0;
   }
   .net h3 {
+    margin-top: 0;
     font-size: 20px;
+  }
+  .net p {
+    font-size: 16px;
+  }
+  .all {
+    display: none;
+  }
+  .veb {
+    display: none;
+  }
+  .pen {
+    width: 360px;
+    height: 300px;
+    margin-left: -50px;
+  }
+  .kor {
+    margin-left: 98px;
+  }
+  .sayt {
+    width: 360px;
+    height: 1940px;
+    margin-left: 20px;
+  }
+  .sayt .ega {
+    margin-left: -90px;
+  }
+  .list {
+    display: none;
+  }
+  .blog {
+    display: none;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+  .corusel {
+    height: 553px;
+    margin-left: -70px;
+    width: 390px;
+    overflow: auto;
+  }
+  .slayd {
+    height: 453px;
+    margin-left: -50px;
+    width: 350px;
+    overflow: auto;
+  }
+  .mask {
+    display: none;
+  }
+  .on,
+  .chap {
+    display: none;
+  }
+  .mijoz {
+    width: 360px;
+    height: 2050px;
+    margin-left: 20px;
+  }
+  .tile {
+    font-size: 20px;
+    text-align: center;
+    width: 320px;
+    margin-left: -60px;
+  }
+  .input1 {
+    width: 320px;
+    height: 30px;
+    margin-left: -60px;
+    border-radius: 0%;
+    padding: 12px 17px;
+  }
+  .hr {
+    height: 1px;
+    width: 320px;
+    margin-left: -60px;
+  }
+  .how {
+    font-size: 18px;
+    width: 237px;
+    margin-left: -60px;
+  }
+  .end {
+    margin-left: -60px;
+  }
+  .lite {
+    margin-left: -60px;
+    margin-top: 30px;
+  }
+  .wto {
+    font-size: 13px;
+  }
+  .vse {
+    width: 320px;
+    height: 412px;
+    margin-top: 960px;
+    margin-left: -60px;
+    position: absolute;
+  }
+  .kofe {
+    margin-left: -30px;
+    margin-top: -15px;
+  }
+  .kofe h1 {
+    font-size: 16px;
+  }
+  .sut {
+    margin-left: 30px;
+  }
+  .sut h1 {
+    font-size: 16px;
+  }
+  .su {
+    margin-left: -30px;
+    margin-top: 36px;
+  }
+  .su h1 {
+    font-size: 16px;
+  }
+  .coy h1 {
+    font-size: 16px;
+  }
+  .fill {
+    margin-top: 100px;
+    margin-left: 12px;
+  }
+  .suv {
+    margin-top: -113px;
+    margin-left: 120px;
+  }
+  .futer {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 17px;
+    width: 397px;
+    height: 420px;
+    margin-top: 2300px;
+    border-radius: 20px 20px 0 0;
+  }
+  .gol {
+    display: none;
+  }
+  .logo {
+    margin-left: 49px;
+    margin-bottom: 27px;
+    display: block;
+  }
+  .uy {
+    width: 380px;
+  }
+  .number {
+    margin-top: 36px;
+    margin-left: 38px;
+  }
+  .users {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 48px;
   }
 }/*# sourceMappingURL=style.css.map */

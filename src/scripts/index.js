@@ -21,7 +21,7 @@ function slider() {
 
 let play = setInterval(() => {
    index++
-   //  slider()
+   slider()
 }, 4000);
 
 next.addEventListener("click", () => {
@@ -58,7 +58,7 @@ function slide() {
 
 let go = setInterval(() => {
    i++
-   //  slider()
+   slider()
 }, 4000);
 
 on.addEventListener("click", () => {
