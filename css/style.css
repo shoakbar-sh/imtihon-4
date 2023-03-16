@@ -97,7 +97,7 @@
 }
 
 #cobe {
-  margin-top: -46px;
+  margin-top: 46px;
 }
 
 .net {
@@ -276,7 +276,75 @@
     background-color: none;
     width: 0px;
     height: 0px;
-    margin-top: 0;
+    margin-top: 0px;
     margin-left: -25px;
+  }
+  .biz {
+    width: 272px;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 220px;
+    margin-left: -50px;
+  }
+  .sit {
+    width: 293px;
+    font-size: 16px;
+    margin-left: -50px;
+  }
+  #cobe {
+    position: absolute;
+    margin-left: -360px;
+    margin-top: -877px;
+  }
+  .haq {
+    margin-left: -153px;
+  }
+  .pi {
+    width: 360px;
+  }
+  .plus {
+    width: 170px;
+    height: 67px;
+    margin-left: -20px;
+  }
+  .plus h1 {
+    font-size: 36px;
+  }
+  .plus span {
+    font-size: 16px;
+  }
+  .elips {
+    display: none;
+  }
+  .back {
+    display: none;
+  }
+  .pila {
+    margin-top: 600px;
+  }
+  .fil {
+    margin-top: -70px;
+  }
+  .komp {
+    font-size: 24px;
+    text-align: center;
+  }
+  .haq {
+    margin-top: 94px;
+  }
+  .siz {
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  .lion {
+    margin-top: -200px;
+  }
+  .net {
+    width: 360px;
+    height: 243px;
+  }
+  .net h3 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
