@@ -13,9 +13,25 @@
   display: none;
 }
 
+.logo {
+  display: none;
+}
+
 .teg {
   letter-spacing: 0.03em;
   line-height: 30px;
+}
+
+.card-body {
+  background-color: white;
+  border: 1px solid #999999;
+  border-radius: 0 0 20px 20px;
+  height: 88px;
+  padding: 10px 20px 0px 20px;
+}
+.card-body h1 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .desk {
@@ -127,5 +143,59 @@
   .park {
     margin-left: 20px;
     margin-top: 30px;
+  }
+  .col-3 {
+    display: none;
+  }
+  .siz {
+    font-size: 20px;
+    width: 350px;
+  }
+  .teg {
+    width: 330px;
+  }
+  .it {
+    width: 360px;
+    height: 2880px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .it hr {
+    width: 300px;
+    margin-left: 0;
+  }
+  .futer {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 17px;
+    width: 397px;
+    height: 420px;
+    margin-top: 120px;
+    border-radius: 20px 20px 0 0;
+  }
+  .gol {
+    display: none;
+  }
+  .home {
+    margin-left: -40px;
+  }
+  .logo {
+    margin-left: 49px;
+    margin-bottom: 27px;
+    display: block;
+  }
+  .uy {
+    width: 340px;
+    margin-left: -30px;
+  }
+  .number {
+    margin-top: 36px;
+    margin-left: 38px;
+  }
+  .users {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 48px;
   }
 }/*# sourceMappingURL=yangilik.css.map */
