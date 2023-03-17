@@ -365,7 +365,25 @@
    }
 
    .fil {
+      color: white;
       margin-top: -70px;
+      text-align: center;
+      width: 179px;
+      height: 48px;
+      background-color: rgba(105, 17, 173, 1);
+      padding: 11px 35px;
+      font-size: 18px;
+
+      &:hover {
+         background-color: #6749eb;
+         color: white;
+         margin-top: 100px;
+         margin-left: 12px;
+         width: 179px;
+         height: 48px;
+         padding: 13px 35px;
+         font-size: 18px;
+      }
    }
 
    .idea {
@@ -567,8 +585,25 @@
    }
 
    .fill {
+      color: white;
       margin-top: 100px;
       margin-left: 12px;
+      width: 179px;
+      height: 48px;
+      background-color: rgba(105, 17, 173, 1);
+      padding: 11px 35px;
+      font-size: 18px;
+
+      &:hover {
+         background-color: #6749eb;
+         color: white;
+         margin-top: 100px;
+         margin-left: 12px;
+         width: 179px;
+         height: 48px;
+         padding: 13px 35px;
+         font-size: 18px;
+      }
    }
 
    .suv {
