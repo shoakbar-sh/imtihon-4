@@ -61,30 +61,6 @@
    transition: all 0.5s ease;
 }
 
-.sit {
-   line-height: 22px;
-}
-
-.fil {
-   background-color: #6911AD;
-   color: #1c1b1b;
-   padding: 32px 0 16px 39px;
-   border-radius: 141px;
-   width: 70px;
-   height: 70px;
-   transition: all 0.5s ease;
-   font-weight: bold;
-
-   &:hover {
-      padding: 32px 68 16px 39px;
-      color: white;
-      border-radius: 141px;
-      width: 170px;
-      height: 70px;
-      transition: all 0.5s ease;
-   }
-}
-
 .logo {
    display: none;
 }
@@ -107,28 +83,6 @@
       height: 70px;
       transition: all 0.5s ease;
    }
-}
-
-.globus {
-   background-color: rgba(217, 217, 217, 1);
-   border-radius: 50%;
-   width: 450px;
-   height: 450px;
-   margin-top: 138px;
-   margin-left: 165px;
-}
-
-#cobe {
-   margin-top: 46px;
-}
-
-.net {
-   margin-top: 40px;
-   margin-left: 30px;
-   background: rgb(255, 255, 255);
-   border: 1px solid #999999;
-   backdrop-filter: blur(2.5px);
-   border-radius: 20px;
 }
 
 .all {
@@ -169,74 +123,9 @@
    }
 }
 
-.kor {
-   background-color: #6911AD;
-   color: #1c1b1b;
-   padding: 12px 0 16px 39px;
-   border-radius: 141px;
-   width: 70px;
-   height: 70px;
-   transition: all 0.5s ease;
-   font-weight: bold;
-
-   &:hover {
-      padding: 32px 68 16px 39px;
-      color: white;
-      border-radius: 141px;
-      width: 170px;
-      height: 70px;
-      transition: all 0.5s ease;
-   }
-}
-
-.bad {
-   background-image: url(../src/images/Group1000001243.svg);
-}
-
-.sayt {
-   background-color: rgba(255, 255, 255, 0.947);
-}
-
-.blog {
-   background-image: url(../src/images/Ellipse1949.svg);
-   width: 1020px;
-   height: 700px;
-   transform: rotate(180deg);
-   filter: blur(10px);
-   margin-top: 10px;
-   margin-left: -30px;
-}
-
-.man {
-   margin-left: 10px;
-   background: rgba(255, 255, 255, 0.9);
-   border: 1px solid #999999;
-   backdrop-filter: blur(1px);
-   border-radius: 20px;
-   margin-top: -45px;
-   width: 296px;
-   height: 88px;
-}
-
-.list {
-   content: url(../src/images/Lines.svg);
-   width: 1515px;
-   height: 685px;
-   margin-top: -130px;
-   margin-left: -89px;
-}
-
-.liniya {
-   background-image: url(../src/images/Lines.svg);
-   width: 1500px;
-   height: 564px;
-   position: relative;
-   margin-top: 460px;
-}
-
 .mask {
    background-image: url(../src/images/Maskgroup.svg);
-   width: 1534px;
+   width: 1517px;
    height: 180px;
    transform: rotate(0deg);
    margin-left: -120px;
@@ -298,120 +187,10 @@
       transform: rotate(20deg);
    }
 
-   .yer {
-      flex-wrap: wrap-reverse;
-   }
-
-   .globus {
-      background-color: none;
-      width: 0px;
-      height: 0px;
-      margin-top: 0px;
-      margin-left: -25px;
-   }
-
-   .biz {
-      width: 272px;
-      font-size: 32px;
-      text-align: center;
-      padding-top: 220px;
-      margin-left: -50px;
-   }
-
-   .sit {
-      width: 293px;
-      font-size: 16px;
-      margin-left: -50px;
-   }
-
-   #cobe {
-      position: absolute;
-      margin-left: -360px;
-      margin-top: -877px;
-   }
-
-   .haq {
-      margin-left: -153px;
-   }
-
-   .pi {
-      width: 360px;
-   }
-
-   .plus {
-      width: 170px;
-      height: 67px;
-      margin-left: -20px;
-
-      h1 {
-         font-size: 36px;
-      }
-
-      span {
-         font-size: 16px;
-      }
-   }
-
-   .elips {
-      display: none;
-   }
-
-   .back {
-      display: none;
-   }
-
-   .pila {
-      margin-top: 600px;
-   }
-
-   .fil {
-      margin-top: -70px;
-   }
-
-   .idea {
-      height: 500px;
-   }
-
-   .haq {
-      flex-wrap: wrap;
-      margin-top: 94px;
-   }
-
    .siz {
       margin-left: 0;
       font-size: 24px;
       text-align: center;
-   }
-
-   .lion {
-      margin-top: -200px;
-   }
-
-   .wed {
-      display: none;
-   }
-
-   .nik {
-      margin-top: -1180px;
-   }
-
-   .nike {
-      margin-top: -310px;
-   }
-
-   .net {
-      width: 360px;
-      height: 243px;
-      margin-left: 0;
-
-      h3 {
-         margin-top: 0;
-         font-size: 20px;
-      }
-
-      p {
-         font-size: 16px;
-      }
    }
 
    .all {
@@ -426,24 +205,6 @@
       width: 360px;
       height: 300px;
       margin-left: -50px;
-   }
-
-   .kor {
-      margin-left: 98px;
-   }
-
-   .sayt {
-      width: 360px;
-      height: 1940px;
-      margin-left: 20px;
-
-      .ega {
-         margin-left: -90px;
-      }
-   }
-
-   .list {
-      display: none;
    }
 
    .mask {
@@ -602,5 +363,4 @@
       margin-top: 310px;
       margin-left: 48px;
    }
-
 }

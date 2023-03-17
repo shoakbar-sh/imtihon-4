@@ -72,4 +72,3 @@ chap.addEventListener("click", () => {
    slide()
    clearInterval(go)
 })
-
