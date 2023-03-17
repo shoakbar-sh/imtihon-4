@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.mobile {
+  display: none;
+}
+
+.teg {
+  letter-spacing: 0.03em;
+  line-height: 30px;
+}
+
+.desk {
+  background: rgba(23, 25, 29, 0.1);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  height: 80px;
+}
+
+.input {
+  background-color: white;
+  width: 93px;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 40px;
+}
+
+.input:after {
+  content: url(../src/images/sun.svg);
+  background-color: rgb(84, 84, 212);
+  color: white;
+  padding-left: 3px;
+  padding-top: 2px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  left: 1px;
+  top: 1.4px;
+  transition: all 0.5s ease;
+}
+
+.input:checked::after {
+  content: url(../src/images/moon.svg);
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-color: rgb(84, 84, 212);
+  padding-left: 4px;
+  padding-top: 2px;
+  display: block;
+  border-radius: 50%;
+  left: 50px;
+  top: 1.4px;
+  transition: all 0.5s ease;
+}
+
+.park {
+  margin-top: 41px;
+  margin-left: 122px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .desk {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  #boks {
+    background-color: white;
+    height: 40px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 1px solid white;
+    position: relative;
+    border-radius: 40px;
+  }
+  #boks:after {
+    content: url(../src/images/sun.svg);
+    background-color: rgb(84, 84, 212);
+    color: white;
+    padding-left: 3px;
+    padding-top: 2px;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    top: 1.4px;
+    transition: all 0.5s ease;
+  }
+  #boks:checked::after {
+    content: url(../src/images/moon.svg);
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-color: rgb(84, 84, 212);
+    padding-left: 4px;
+    padding-top: 2px;
+    display: block;
+    border-radius: 50%;
+    top: 1.4px;
+    transition: all 0.5s ease;
+    transform: rotate(20deg);
+  }
+  .park {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=yangilik.css.map */
