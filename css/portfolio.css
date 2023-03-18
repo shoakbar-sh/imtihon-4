@@ -33,7 +33,7 @@
 }
 
 .input:after {
-  content: url(./src/images/sun.svg);
+  content: url(../images/for/sun.svg);
   background-color: rgb(84, 84, 212);
   color: white;
   padding-left: 3px;
@@ -49,7 +49,7 @@
 }
 
 .input:checked::after {
-  content: url(./src/images/moon.svg);
+  content: url(../images/for/moon.svg);
   position: absolute;
   width: 36px;
   height: 36px;
